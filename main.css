@@ -1,0 +1,66 @@
+body {
+  text-align: center;
+  font-family: "Trebuchet MS";
+  background-color: teal;
+}
+
+h1 {
+  font-size: 100px;
+  color: white;
+}
+
+div.eightBall {
+  background-color: black;
+  border: 1px solid black;
+  border-radius: 50%;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+div.answer {
+  background-color: white;
+  border: 1 px solid white;
+  border-radius: 50%;
+  width: 50%;
+  height: 50%;
+  margin: 25% auto;
+  vertical-align: sub;
+}
+
+p#answer {
+  padding: 50px;
+  color: black;
+  font-size: 1.2em;
+}
+
+button {
+  padding: 20px;
+  border: 1px solid black;
+  background-color: purple;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  font-family: "Trebuchet MS";
+  font-weight: 100;
+  letter-spacing: 2px;
+  transition: 0.5s font-size;
+}
+
+input {
+  margin: 20px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2em;
+  font-family: "Trebuchet MS";
+  font-weight: 100;
+  letter-spacing: 2px;
+  transition: 0.5s font-size;
+}
+
+button:hover {
+  font-size: 1.5em;
+}
