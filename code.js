@@ -1,25 +1,25 @@
 const answerOptions = [
-  "Yes, but do it drunk",
-  "My sources say no, but they also said Hilary would win",
-  "Do what Jesus would do",
-  "You wish",
-  "Leave me alone",
+  "Yes, but do it drunk.",
+  "My sources say no, but they also said Hilary would win.",
+  "Beach, Please!",
+  "You wish!",
+  "Leave me alone!",
   "GO AWAY!",
-  "Not looking good for you",
-  "LMAO",
-  "In your dreams",
+  "Not looking good for you.",
+  "LMAO!",
+  "In your dreams.",
   "WWJD?",
-  "No, no cake for you",
-  "Ask the Ouija Board",
-  "Ask Missi",
-  "Ask God",
-  "Yes, you deserve cake",
-  "Stop shaking me",
-  "HA HA HA HAHAHAHA",
-  "I told you so",
-  "Ask Randy",
-  "No, I don't know why your code doesn't work",
-  "No, I don't know why your code works",
+  "Geez, ask your Mom!",
+  "Ask the Ouija Board.",
+  "BUGGER OFF!",
+  '"Bye Felicia!"',
+  "No, ya daft cow!",
+  "Stop shaking me. I'm hungover!",
+  "BWAHAHAHA",
+  "I told you so.",
+  "I don't know and I don't care.",
+  "Idk, I'll ask your Mom tonight.",
+  "Figure it out yourself, ya wanker!",
 ];
 
 let button = document.getElementById("button");
@@ -32,5 +32,16 @@ button.addEventListener("click", function () {
   } else {
     let num = answerOptions[Math.floor(Math.random() * answerOptions.length)];
     answer.innerText = num;
+  }
+});
+
+document.addEventListener("keydown", function (evt) {
+  switch (evt.key) {
+    case "Enter":
+      if (input.value.length > 0) {
+        let num =
+          answerOptions[Math.floor(Math.random() * answerOptions.length)];
+        answer.innerText = num;
+      }
   }
 });
